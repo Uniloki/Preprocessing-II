@@ -14,3 +14,17 @@
   text-align: @align;
   padding: @padding;
 }
+
+.keyframes(@name, @arguements) {
+  @keyframes @name {
+    @arguments();
+  }
+  @-webkit-keyframes @name {
+    @arguments();
+  }
+}
+
+.animation(@arguements) {
+  animation: @arguements;
+  -webkit-animation: @arguments;
+}

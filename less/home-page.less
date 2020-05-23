@@ -1,4 +1,7 @@
 .welcome-cont {
+  @media @mobile {
+    width: 95%;
+  }
   width: 40%;
   margin: 0 auto;
   border-bottom: 1px dashed black;
@@ -8,21 +11,38 @@
 }
 .home {
   .content-section {
+    @media @mobile {
+      flex-direction: column;
+      width: 95%;
+      margin: 0;
+    }
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     .text-content {
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto;
+      }
       width: 48%;
       padding-right: 1%;
     }
 
     .img-content {
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
       width: 48%;
       padding-left: 1%;
 
       img {
+        @media @mobile {
+          width: 95%;
+        }
         border-radius: 10px;
       }
     }
@@ -53,12 +73,25 @@
   }
 
   .content-pick {
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      margin: 0 auto;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
+      @media @mobile {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+      }
       width: 30%;
       margin-bottom: 30px;
       .btn {

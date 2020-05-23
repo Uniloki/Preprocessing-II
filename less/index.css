@@ -134,12 +134,13 @@ table {
   margin: 0 auto;
   border-bottom: 1px dashed black;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav-cont {
     width: 98%;
-    padding: 2px;
-    justify-content: space-around;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
   }
 }
 .nav-cont a {
@@ -148,7 +149,7 @@ table {
   font-size: 1.4rem;
   padding: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav-cont a {
     padding: 2px;
   }
@@ -158,9 +159,10 @@ table {
   padding-right: 200px;
   padding-top: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav-cont h1 {
     padding: 2px;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -179,6 +181,11 @@ table {
   margin: 0 auto;
   border-bottom: 1px dashed black;
 }
+@media (max-width:500px) {
+  .welcome-cont {
+    width: 95%;
+  }
+}
 .welcome-cont h2 {
   margin-top: 20px;
 }
@@ -188,16 +195,41 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 95%;
+    margin: 0;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 95%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -224,9 +256,26 @@ table {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 .home .content-pick .destination .btn {
   background-color: teal;
